@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+.navbar-brand {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white !important;
+  transition: 0.3s;
+}
+
+.navbar-brand:hover {
+  color: lightblue !important;
+  transform: scale(1.05);
+}
+
 .nav-link {
   color: lightblue !important;
   transition: 0.3s;
@@ -11,4 +25,91 @@
 
 .nav-link:hover {
   color: teal !important;
+}
+
+.brand {
+  color: #00e5ff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+}
+
+.tech-nav {
+  background-color: #0b0f19; /* deep tech black-blue */
+}
+
+.hero-section {
+  background-color: #111827; /* slightly lighter than navbar */
+}
+
+.featured-section {
+  background-color: #0f172a; /* slightly different from hero */
+}
+
+.section-title {
+  color: #00e5ff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+section p {
+  line-height: 1.6;
+}
+
+.featured-subtext {
+  color: #cbd5e1; /* soft light gray */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.25);
+}
+
+.card-title {
+  color: #53b5c0;
+}
+
+.card-text {
+  color: #cbd5e1;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #00e5ff !important;
+  border: none;
+  color: #0b0f19 !important;
+}
+
+.btn-primary:hover {
+  background-color: #00bcd4 !important;
+}
+
+.btn-primary:active {
+  transform: scale(0.96);
+}
+
+.products-section {
+  background-color: #0b1220;
+}
+
+.card-img-top {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */
