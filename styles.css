@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/*===== Navbar =====*/
 .navbar-brand {
   display: inline-block;
   font-size: 1.8rem;
@@ -27,7 +32,7 @@
   color: teal !important;
 }
 
-.brand {
+.brandplug {
   color: #00e5ff;
   font-weight: 700;
   letter-spacing: 1px;
@@ -38,12 +43,14 @@
   background-color: #0b0f19; /* deep tech black-blue */
 }
 
+/*====Hero Section=====*/
 .hero-section {
   background-color: #111827; /* slightly lighter than navbar */
+  align-content: center;
 }
 
-.featured-section {
-  background-color: #0f172a; /* slightly different from hero */
+section {
+  min-height: 80vh;
 }
 
 .section-title {
@@ -56,10 +63,49 @@ section p {
   line-height: 1.6;
 }
 
+.products-section, .why-section, .contact-section, .featured-section {
+  background-color: #111827; /* slightly different from navbar */
+}
+
+/* FEATURED PRODUCTS SECTION */
 .featured-subtext {
   color: #cbd5e1; /* soft light gray */
   max-width: 600px;
   margin: 0 auto;
+}
+
+.feature-box {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+}
+
+.feature-box h5 {
+  color: #53b5c0;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  color: #cbd5e1;
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.feature-box:hover .feature-icon {
+  transform: scale(1.08);
 }
 
 .card {
@@ -84,6 +130,9 @@ section p {
 
 .card-img-top {
   transition: transform 0.3s ease;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card:hover .card-img-top {
@@ -104,12 +153,41 @@ section p {
   transform: scale(0.96);
 }
 
-.products-section {
-  background-color: #0b1220;
+.contact-form {
+  max-width: 700px;
 }
 
-.card-img-top {
-  height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.form-label {
+  color: #cbd5e1;
+}
+
+.form-control {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  padding: 12px;
+}
+
+.form-control:focus {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border-color: #00e5ff;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.25);
+}
+
+.footer-section {
+  background-color: #0b0f19;
+  border-top: 1px solid #334155;
+}
+
+.footer-link {
+  color: #00e5ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #00bcd4;
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */
